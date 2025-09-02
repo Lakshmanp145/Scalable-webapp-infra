@@ -14,11 +14,10 @@ variable "common_tags" {
     }
 }
 
-variable "domain_name" {
-    default = "lakshman.site"
+variable "zone_id" {
+    default = "Z0297339GVFSCF3IFANY"
 }
 
-
-variable "zone_id" {
-    default = "Z06311461V7HCH4LJMH8W"
+variable "domain_name" {
+    default = "lakshman.site"
 }

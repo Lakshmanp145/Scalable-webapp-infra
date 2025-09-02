@@ -2,15 +2,16 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "5.92.0"
+      version = "5.84.0"
     }
   }
 
   backend "s3" {
-    bucket = "laxman-tf-remote-state-prod"
-    key = "expense-dev-eks-rds"
+    bucket = "laxman-tf-remote-state-dev"
+    key = "expense-dev-app-alb"
     region = "us-east-1"
-    dynamodb_table = "laxman-tf-remote-state-prod"
+    dynamodb_table = "laxman-tf-remote-state-dev"
+
   }
 }
 
